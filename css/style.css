@@ -1,0 +1,171 @@
+/* @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"); */
+
+:root {
+  --primary-color: #edf2f8;
+  --navbar-color: rgba(255, 255, 255, 0.25);
+  --color-dark: #3f4156;
+  --gray-color: #6b7688;
+  --color-text: #000;
+
+  --color-main: #71c6dd;
+  /* --color-main-light: #e1f6fb; */
+  --color-dark-medium: #51546e;
+  --color-dark-light: #696d97;
+  --color-light: #e5e5e5;
+  --color-gray: #8b8b8b;
+  --color-light-gray: #b2bdbd;
+  --color-bg: #2d2d39;
+  --color-success: #5dd693;
+  --color-error: #fc4b0b;
+}
+
+/*========== base styles ==========*/
+
+* {
+  /*font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  /* color: inherit; */
+  font-size: inherit;
+}
+
+html {
+  font-size: 56.25%;
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (min-width: 2100px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: var(--color-dark);
+  background-color: var(--primary-color);
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  display: inline-block;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  font-weight: 500;
+}
+
+.btn--main {
+  background-color: var(--color-main);
+  color: var(--color-dark);
+}
+  
+.btn:hover {
+  opacity: 0.9;
+}
+
+/*==============================
+=>  Layout
+================================*/
+.app__layout {
+    /*margin-top: 2.4rem;*/
+    margin-top: 60px;
+}
+
+.app__layout > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container {
+    max-width: 120rem;
+    width: 90%;
+    margin: auto;
+}
+/*==============================
+=>  Home Page
+================================*/
+.mainContent_container{
+  height: calc(100vh - 60px);
+}
+
+/*==============================
+=>  Main Content
+================================*/
+.heading{
+  margin-top: 3rem;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.app__mainContent-container{
+  margin-top: 2.5rem;
+  margin-bottom: 2.4rem;
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.articles_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.articles__read_more{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.app__article{
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  margin: 2.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 300px;
+}
+
+.app__article .cover-photo{
+  height: 148.5px;
+  width: 100%;
+}
+
+.app__article h1{
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.edit-btn{
+  margin-right: 3px;
+}
+

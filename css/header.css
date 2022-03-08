@@ -1,0 +1,76 @@
+.app__header{
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	height: calc(100vh - 60px);
+	padding-bottom: 0;
+}
+
+.app__header_main{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: inherit;
+}
+
+.app__header_text{
+	width:40%;
+	padding: 12rem 0 6rem 10rem;
+	letter-spacing: .3px;
+}
+
+.app__header_text h1{
+	font-size: 10rem;
+}
+
+.app__header_text h3{
+	line-height: 1.6em;
+	font-size: 1.7rem;
+	font-weight: normal;
+}
+
+.app__header_text h4{
+	display: flex;
+	justify-content: center;
+	width: inherit;
+	margin: 2rem auto 0 auto;
+}
+
+.app__header_banner{
+	width: 60%;
+}
+
+.app__header_banner img{
+	height: 80%;
+}
+
+.app__header .app__header-wave {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+@media screen and (max-width: 700px) {
+	.app__header_main{
+		flex-direction: column;
+	}
+
+	.app__header_text{
+		width: 100%;
+		padding: 0;
+	}
+
+	.app__header_text h1{
+		font-size: 3rem;
+	}
+
+	.app__header_text h3{
+		font-size: 1.3rem;
+	}
+
+	.app__header_banner{
+		width: 70%;
+	}
+}
